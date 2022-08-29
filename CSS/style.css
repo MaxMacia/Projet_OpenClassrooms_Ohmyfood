@@ -1,0 +1,129 @@
+@charset "UTF-8";
+/* Variables */ /* Mixins */ /* Elements principaux de la page*/
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header page index */
+header {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #cccccc;
+  box-shadow: 0px 5px 20px #cccccc;
+  padding-top: 10px;
+}
+header img {
+  height: 30px;
+}
+
+/* Bloc réservation de la page index */
+#reservation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#reservation .reservation__form {
+  margin-top: 2px;
+  padding: 10px 0px 10px 0px;
+  background-color: #ededed;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+#reservation .reservation__form .fa-solid.fa-location-dot {
+  font-size: 0.8em;
+}
+#reservation .reservation__form input {
+  background-color: #ededed;
+  border: none;
+  text-align: center;
+  width: 35%;
+}
+#reservation .reservation__bloc {
+  text-align: center;
+  height: 300px;
+  padding: 30px 40px 30px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: whitesmoke;
+}
+#reservation .reservation__bloc h1 {
+  font-size: 1.2em;
+}
+#reservation .reservation__bloc p {
+  color: #a6a6a6;
+  font-weight: lighter;
+  font-size: 0.9em;
+}
+#reservation .reservation__bloc button {
+  height: 40px;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+  box-shadow: 5px 5px 5px #d1d1d1;
+  cursor: pointer;
+  font-size: 0.8em;
+  color: #FFF;
+  background-color: #9356DC;
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+}
+
+/* Bloc Fonctionnement */
+#fonctionnement {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#fonctionnement h2 {
+  font-size: 1.2em;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+#fonctionnement ul {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+  padding-left: 30px;
+}
+#fonctionnement ul li {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+  height: 50px;
+}
+#fonctionnement ul li span {
+  background-color: #9356DC;
+  color: #FFF;
+  font-size: 0.7em;
+  margin-bottom: 15px;
+  border-radius: 40px;
+  padding-top: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#fonctionnement ul li .fa-solid.fa-mobile-screen-button, #fonctionnement ul li .fa-solid.fa-list, #fonctionnement ul li .fa-solid.fa-store {
+  font-size: 0.9em;
+}
+#fonctionnement ul li h2 {
+  font-size: 0.9em;
+}/*# sourceMappingURL=style.css.map */

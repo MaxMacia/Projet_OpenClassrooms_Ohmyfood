@@ -1,0 +1,19 @@
+/* Mixins */
+@mixin shadow {
+    box-shadow: 5px 5px 5px darken($grey-color, 13%);
+}
+
+
+@mixin btn {
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    @include shadow;
+    cursor: pointer;
+    font-size: 0.8em;
+    color: $white-color;
+    background-color: $primary-color;
+    background-image: linear-gradient(to bottom right, $secondary-color, $primary-color);
+}
