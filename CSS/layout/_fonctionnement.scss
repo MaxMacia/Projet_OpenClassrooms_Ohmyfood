@@ -12,6 +12,10 @@
         flex-direction: column;
         width: 95%;
         padding: 0px 10px 0px 30px;
+        @include desktop{
+            margin: auto;
+            width: 50%;
+        }
         li{
             display: flex;
             border-radius: 15px;

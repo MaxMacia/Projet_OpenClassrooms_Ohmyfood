@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     
+    
     .reservation__form{
         margin-top: 2px;
         padding: 10px 0px 10px 0px;
@@ -12,6 +13,7 @@
         display: flex;
         width: 100%;
         justify-content: center;
+        
         
         .fa-solid.fa-location-dot{
             font-size: 0.8em;
@@ -28,23 +30,21 @@
     .reservation__bloc{
         text-align: center;
         height: 300px;
+        width: 100%;
         padding: 30px 40px 30px 40px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        background-color: lighten($grey-color, 1%);
-        
+        background-color: lighten($grey-color, 1%);   
         h1{
             font-size: 1.2em;
         }
-        
         p{
             color: darken($grey-color, 30%);
             font-weight: lighter;
             font-size: 0.9em
         }
-
         button{
             @include btn;
             transition: transform, 0.9s;

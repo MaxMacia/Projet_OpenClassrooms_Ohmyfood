@@ -6,6 +6,9 @@
     padding: 50px 0px 50px 0px;
     background-color: lighten($grey-color, 1%);
     height: 1300px;
+    @include desktop{
+        height: 900px;
+    }
     h2{
         font-size: 1.2em;
         padding-left: 20px;
@@ -17,8 +20,16 @@
         justify-content: space-around;
         align-items: center;
         height: 1200px;
+        @include desktop{
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: 700px;
+        }
         a{
             width: 90%;
+            @include desktop{
+                width: 40%;
+            }
             .nouveau{
                 background-color: $tertiary-color;
                 color: darken($tertiary-color, 40%);
@@ -30,12 +41,19 @@
                 padding-bottom: 5px;
                 margin-top: -25px;
                 transform: translate(450%, 170%);
+                @include desktop{
+                    width: 22%;
+                    transform: translate(320%, 170%);
+                }
             }
             .restaurants__cards{
                 height: 280px;
                 background-color: $white-color;
                 border-radius: 15px;
                 @include shadow;
+                &:hover{
+                    @include dark-shadow;
+                }
                 img{
                     object-fit: cover;
                     height: 200px;

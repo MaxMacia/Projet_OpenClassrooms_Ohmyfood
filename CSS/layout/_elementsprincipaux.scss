@@ -11,6 +11,13 @@ body{
     font-family: 'Roboto';
 }
 
+#global-container{
+    @include desktop{
+        margin: auto;
+        width: 50%;
+    }
+}
+
 ul{
     list-style: none;
 }

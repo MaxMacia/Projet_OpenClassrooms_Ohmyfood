@@ -9,6 +9,13 @@ body {
   font-family: "Roboto";
 }
 
+@media screen and (min-width: 768px) {
+  #global-container {
+    margin: auto;
+    width: 50%;
+  }
+}
+
 ul {
   list-style: none;
 }
@@ -58,6 +65,7 @@ header img {
 #reservation .reservation__bloc {
   text-align: center;
   height: 300px;
+  width: 100%;
   padding: 30px 40px 30px 40px;
   display: flex;
   flex-direction: column;
@@ -106,6 +114,12 @@ header img {
   width: 95%;
   padding: 0px 10px 0px 30px;
 }
+@media screen and (min-width: 768px) {
+  #fonctionnement ul {
+    margin: auto;
+    width: 50%;
+  }
+}
 #fonctionnement ul li {
   display: flex;
   border-radius: 15px;
@@ -145,6 +159,11 @@ header img {
   background-color: whitesmoke;
   height: 1300px;
 }
+@media screen and (min-width: 768px) {
+  #restaurants {
+    height: 900px;
+  }
+}
 #restaurants h2 {
   font-size: 1.2em;
   padding-left: 20px;
@@ -157,8 +176,20 @@ header img {
   align-items: center;
   height: 1200px;
 }
+@media screen and (min-width: 768px) {
+  #restaurants .restaurants__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 700px;
+  }
+}
 #restaurants .restaurants__container a {
   width: 90%;
+}
+@media screen and (min-width: 768px) {
+  #restaurants .restaurants__container a {
+    width: 40%;
+  }
 }
 #restaurants .restaurants__container a .nouveau {
   background-color: #99E2D0;
@@ -172,11 +203,20 @@ header img {
   margin-top: -25px;
   transform: translate(450%, 170%);
 }
+@media screen and (min-width: 768px) {
+  #restaurants .restaurants__container a .nouveau {
+    width: 22%;
+    transform: translate(320%, 170%);
+  }
+}
 #restaurants .restaurants__container a .restaurants__cards {
   height: 280px;
   background-color: #FFF;
   border-radius: 15px;
   box-shadow: 5px 5px 5px #d1d1d1;
+}
+#restaurants .restaurants__container a .restaurants__cards:hover {
+  box-shadow: 5px 5px 5px #b0b0b0;
 }
 #restaurants .restaurants__container a .restaurants__cards img {
   -o-object-fit: cover;
@@ -216,8 +256,12 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 0px 30px 0px;
+}
+@media screen and (min-width: 768px) {
+  footer {
+    height: 150px;
+  }
 }
 footer h2 {
   font-family: "Shrikhand";
@@ -225,12 +269,23 @@ footer h2 {
   font-weight: 50;
   padding-left: 20px;
 }
+@media screen and (min-width: 768px) {
+  footer h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
 footer ul {
   padding-left: 20px;
   height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+@media screen and (min-width: 768px) {
+  footer ul {
+    flex-direction: row;
+  }
 }
 footer ul a {
   color: #FFF;

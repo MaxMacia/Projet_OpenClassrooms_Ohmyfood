@@ -3,6 +3,9 @@
     box-shadow: 5px 5px 5px darken($grey-color, 13%);
 }
 
+@mixin dark-shadow {
+    box-shadow: 5px 5px 5px darken($grey-color, 26%);
+}
 
 @mixin btn {
     height: 40px;
@@ -16,4 +19,10 @@
     color: $white-color;
     background-color: $primary-color;
     background-image: linear-gradient(to bottom right, $secondary-color, $primary-color);
+}
+
+@mixin desktop {
+    @media screen and (min-width: $breakpoints) {
+        @content;
+    }
 }
