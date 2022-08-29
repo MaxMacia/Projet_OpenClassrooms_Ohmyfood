@@ -1,0 +1,70 @@
+/* Bloc restaurants de la page index */
+
+#restaurants{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px 50px 0px;
+    background-color: lighten($grey-color, 1%);
+    height: 1300px;
+    h2{
+        font-size: 1.2em;
+        padding-left: 20px;
+        margin-bottom: 15px;
+    }
+    .restaurants__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 1200px;
+        a{
+            width: 90%;
+            .nouveau{
+                background-color: $tertiary-color;
+                color: darken($tertiary-color, 40%);
+                font-size: 0.7em;
+                width: 17%;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                margin-top: -25px;
+                transform: translate(450%, 170%);
+            }
+            .restaurants__cards{
+                height: 280px;
+                background-color: $white-color;
+                border-radius: 15px;
+                @include shadow;
+                img{
+                    object-fit: cover;
+                    height: 200px;
+                    width: 100%; 
+                    border-top-left-radius: 15px;
+                    border-top-right-radius: 15px;                   
+                }  
+                .restaurants__cards_bloc{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 70px;
+                    .restaurants__cards_sous-bloc{
+                        padding-left: 15px;
+                        h3{
+                            font-size: 0.9em;
+                            margin-bottom: 5px;
+                        }
+                        p{
+                            font-size: 0.9em;
+                        }
+                    }
+                    .fa-regular.fa-heart{
+                        padding-right: 25px;
+                        font-size: 1.5em;
+                    }
+                } 
+            }
+        }
+        
+    }
+}

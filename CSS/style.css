@@ -26,7 +26,7 @@ header {
   align-items: center;
   border-bottom: 1px solid #cccccc;
   box-shadow: 0px 5px 20px #cccccc;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 header img {
   height: 30px;
@@ -85,7 +85,7 @@ header img {
   color: #FFF;
   background-color: #9356DC;
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  transition: transform, 1s;
+  transition: transform, 0.9s;
 }
 #reservation .reservation__bloc button:hover {
   transform: scale(1.05);
@@ -141,15 +141,21 @@ header img {
 #restaurants {
   display: flex;
   flex-direction: column;
-  padding: 30px 0px 30px 0px;
+  padding: 50px 0px 50px 0px;
   background-color: whitesmoke;
-  height: 1600px;
+  height: 1300px;
+}
+#restaurants h2 {
+  font-size: 1.2em;
+  padding-left: 20px;
+  margin-bottom: 15px;
 }
 #restaurants .restaurants__container {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  height: 800px;
+  height: 1200px;
 }
 #restaurants .restaurants__container a {
   width: 90%;
@@ -163,7 +169,8 @@ header img {
   padding-right: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
-  transform: translate(270px, 40px);
+  margin-top: -25px;
+  transform: translate(450%, 170%);
 }
 #restaurants .restaurants__container a .restaurants__cards {
   height: 280px;
@@ -198,4 +205,34 @@ header img {
 #restaurants .restaurants__container a .restaurants__cards .restaurants__cards_bloc .fa-regular.fa-heart {
   padding-right: 25px;
   font-size: 1.5em;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid #000;
+  color: #FFF;
+  background-color: #333333;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+footer h2 {
+  font-family: "Shrikhand";
+  font-size: 1em;
+  font-weight: 50;
+  padding-left: 20px;
+}
+footer ul {
+  padding-left: 20px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+footer ul a {
+  color: #FFF;
+  font-size: 0.8em;
 }/*# sourceMappingURL=style.css.map */
