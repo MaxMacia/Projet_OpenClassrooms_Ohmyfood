@@ -47,6 +47,10 @@
 
         button{
             @include btn;
+            transition: transform, 1s;
+            &:hover{
+                transform: scale(1.05);
+            }
         }
     }
 }

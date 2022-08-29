@@ -15,6 +15,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: #000;
 }
 
 /* Header page index */
@@ -84,46 +85,117 @@ header img {
   color: #FFF;
   background-color: #9356DC;
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  transition: transform, 1s;
+}
+#reservation .reservation__bloc button:hover {
+  transform: scale(1.05);
 }
 
 /* Bloc Fonctionnement */
 #fonctionnement {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 0px 30px 0px;
 }
 #fonctionnement h2 {
   font-size: 1.2em;
-  padding-left: 10px;
+  padding-left: 20px;
   margin-bottom: 20px;
 }
 #fonctionnement ul {
   display: flex;
   flex-direction: column;
-  padding-right: 10px;
-  padding-left: 30px;
+  width: 95%;
+  padding: 0px 10px 0px 30px;
 }
 #fonctionnement ul li {
   display: flex;
-  justify-content: space-around;
-  border: 1px solid black;
   border-radius: 15px;
   margin-bottom: 20px;
   padding-top: 15px;
   height: 50px;
+  box-shadow: 5px 5px 5px #d1d1d1;
 }
 #fonctionnement ul li span {
   background-color: #9356DC;
   color: #FFF;
   font-size: 0.7em;
-  margin-bottom: 15px;
+  margin: 0px 0px 15px -9px;
   border-radius: 40px;
-  padding-top: 2px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 2px 7px 0px 7px;
 }
 #fonctionnement ul li .fa-solid.fa-mobile-screen-button, #fonctionnement ul li .fa-solid.fa-list, #fonctionnement ul li .fa-solid.fa-store {
   font-size: 0.9em;
+  margin: 0px 10px 0px 20px;
 }
 #fonctionnement ul li h2 {
   font-size: 0.9em;
+  font-weight: lighter;
+}
+#fonctionnement ul li:hover {
+  background-color: #f2eafb;
+}
+#fonctionnement ul li:hover .fa-solid.fa-mobile-screen-button, #fonctionnement ul li:hover .fa-solid.fa-list, #fonctionnement ul li:hover .fa-solid.fa-store {
+  color: #9356DC;
+}
+
+/* Bloc restaurants de la page index */
+#restaurants {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0px 30px 0px;
+  background-color: whitesmoke;
+  height: 1600px;
+}
+#restaurants .restaurants__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 800px;
+}
+#restaurants .restaurants__container a {
+  width: 90%;
+}
+#restaurants .restaurants__container a .nouveau {
+  background-color: #99E2D0;
+  color: #278870;
+  font-size: 0.7em;
+  width: 17%;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transform: translate(270px, 40px);
+}
+#restaurants .restaurants__container a .restaurants__cards {
+  height: 280px;
+  background-color: #FFF;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px #d1d1d1;
+}
+#restaurants .restaurants__container a .restaurants__cards img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 200px;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+#restaurants .restaurants__container a .restaurants__cards .restaurants__cards_bloc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+#restaurants .restaurants__container a .restaurants__cards .restaurants__cards_bloc .restaurants__cards_sous-bloc {
+  padding-left: 15px;
+}
+#restaurants .restaurants__container a .restaurants__cards .restaurants__cards_bloc .restaurants__cards_sous-bloc h3 {
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+#restaurants .restaurants__container a .restaurants__cards .restaurants__cards_bloc .restaurants__cards_sous-bloc p {
+  font-size: 0.9em;
+}
+#restaurants .restaurants__container a .restaurants__cards .restaurants__cards_bloc .fa-regular.fa-heart {
+  padding-right: 25px;
+  font-size: 1.5em;
 }/*# sourceMappingURL=style.css.map */
