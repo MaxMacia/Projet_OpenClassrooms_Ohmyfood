@@ -25,27 +25,30 @@
             flex-wrap: wrap;
             height: 700px;
         }
-        a{
+        a{  
             width: 90%;
             @include desktop{
                 width: 40%;
             }
-            .nouveau{
-                background-color: $tertiary-color;
-                color: darken($tertiary-color, 40%);
-                font-size: 0.7em;
-                width: 17%;
-                padding-left: 5px;
-                padding-right: 5px;
-                padding-top: 5px;
-                padding-bottom: 5px;
-                margin-top: -25px;
-                transform: translate(450%, 170%);
-                @include desktop{
-                    width: 22%;
-                    transform: translate(320%, 170%);
+            article{
+                position: relative;
+                .nouveau{
+                    background-color: $tertiary-color;
+                    color: darken($tertiary-color, 40%);
+                    font-size: 0.7em;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    position: absolute;
+                    left: 80%;
+                    top: 5%;
+                    @include desktop{                        
+                        left: 74%;
+                    }
                 }
             }
+            
             .restaurants__cards{
                 height: 280px;
                 background-color: $white-color;

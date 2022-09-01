@@ -1,0 +1,57 @@
+@import "utils/variables";
+@import "utils/mixins";
+
+@import "layout/elementsprincipaux";
+@import "layout/header-menu";
+@import "layout/image-menu";
+
+/* Container */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    width: 100%;
+    background-color: lighten($grey-color, 1%);
+    .container-titre{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 25px;
+        h1{
+           font-family: 'shrikhand'; 
+           font-size: 1.3em;
+           font-weight: lighter;
+        }
+        .fa-regular.fa-heart{
+            font-size: 1.3em;
+            padding-right: 60px;
+        }
+    }
+    .container-bloc{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        section{
+            h2{
+                font-size: 1.3em;
+                font-weight: 100;
+            }
+            article{
+                background-color: $white-color;
+                height: 60px;
+                border-radius: 15px;
+                @include shadow;
+                .container-bloc-p{
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+

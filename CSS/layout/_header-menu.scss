@@ -1,0 +1,16 @@
+/* Header pages menus */
+
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    @include padding-header;  
+    a{
+        padding-left: 20px;
+    }
+    img{
+        height: 30px;
+        padding-left: 70px;
+        
+    }
+}

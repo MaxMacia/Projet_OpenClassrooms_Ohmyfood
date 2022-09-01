@@ -7,6 +7,10 @@
     box-shadow: 5px 5px 5px darken($grey-color, 26%);
 }
 
+@mixin padding-header {
+    padding: 25px 0px 15px 0px;  
+}
+
 @mixin btn {
     height: 40px;
     border-radius: 20px;

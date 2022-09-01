@@ -11,12 +11,9 @@
         display: flex;
         width: 100%;
         justify-content: center;
-        
-        
         .fa-solid.fa-location-dot{
             font-size: 0.8em;
         }
-        
         input{
             background-color: darken($grey-color, 2%);
             border: none;

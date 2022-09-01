@@ -27,13 +27,12 @@ a {
 
 /* Header page index */
 header {
-  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid #cccccc;
   box-shadow: 0px 5px 20px #cccccc;
-  padding-top: 20px;
+  padding: 25px 0px 15px 0px;
 }
 header img {
   height: 30px;
@@ -192,22 +191,24 @@ header img {
     width: 40%;
   }
 }
-#restaurants .restaurants__container a .nouveau {
+#restaurants .restaurants__container a article {
+  position: relative;
+}
+#restaurants .restaurants__container a article .nouveau {
   background-color: #99E2D0;
   color: #278870;
   font-size: 0.7em;
-  width: 17%;
   padding-left: 5px;
   padding-right: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
-  margin-top: -25px;
-  transform: translate(450%, 170%);
+  position: absolute;
+  left: 80%;
+  top: 5%;
 }
 @media screen and (min-width: 768px) {
-  #restaurants .restaurants__container a .nouveau {
-    width: 22%;
-    transform: translate(320%, 170%);
+  #restaurants .restaurants__container a article .nouveau {
+    left: 74%;
   }
 }
 #restaurants .restaurants__container a .restaurants__cards {
@@ -291,4 +292,4 @@ footer ul {
 footer ul a {
   color: #FFF;
   font-size: 0.8em;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=index-style.css.map */
