@@ -20,11 +20,11 @@
         margin-top: 25px;
         h1{
            font-family: 'shrikhand'; 
-           font-size: 1.3em;
+           font-size: 1.6em;
            font-weight: lighter;
         }
         .fa-regular.fa-heart{
-            font-size: 1.3em;
+            font-size: 1.6em;
             padding-right: 60px;
         }
     }
@@ -38,13 +38,26 @@
                 font-weight: 100;
             }
             article{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
                 background-color: $white-color;
-                height: 60px;
+                height: 70px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                padding-left: 10px;
+                padding-right: 20px;
                 border-radius: 15px;
                 @include shadow;
+                h3{
+                    font-weight: 550;
+                    margin-bottom: 5px;
+                }
                 .container-bloc-p{
                     display: flex;
                     justify-content: space-between;
+                    font-weight: 550;
+                    
                 }
             }
         }

@@ -74,11 +74,11 @@ main > img + .container {
 }
 .container .container-titre h1 {
   font-family: "shrikhand";
-  font-size: 1.3em;
+  font-size: 1.6em;
   font-weight: lighter;
 }
 .container .container-titre .fa-regular.fa-heart {
-  font-size: 1.3em;
+  font-size: 1.6em;
   padding-right: 60px;
 }
 .container .container-bloc {
@@ -91,12 +91,24 @@ main > img + .container {
   font-weight: 100;
 }
 .container .container-bloc section article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #FFF;
-  height: 60px;
+  height: 70px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 20px;
   border-radius: 15px;
   box-shadow: 5px 5px 5px #d1d1d1;
+}
+.container .container-bloc section article h3 {
+  font-weight: 550;
+  margin-bottom: 5px;
 }
 .container .container-bloc section article .container-bloc-p {
   display: flex;
   justify-content: space-between;
+  font-weight: 550;
 }/*# sourceMappingURL=menu-style.css.map */
