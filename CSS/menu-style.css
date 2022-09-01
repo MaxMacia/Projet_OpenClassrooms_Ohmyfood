@@ -1,4 +1,31 @@
-/* Variables */ /* Mixins */ /* Elements principaux de la page*/
+/* Variables */ /* Mixins */ /* animation coeur */
+.fa-solid.fa-heart {
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.coeur {
+  position: relative;
+  z-index: 0;
+}
+.coeur .coeur-bg {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity, 1s;
+  cursor: pointer;
+}
+.coeur .coeur-bg:hover {
+  opacity: 1;
+}
+
+/* Elements principaux de la page*/
 * {
   margin: 0px;
   box-sizing: border-box;
@@ -71,15 +98,15 @@ main > img + .container {
   justify-content: space-between;
   align-items: center;
   margin-top: 25px;
+  width: 90%;
 }
 .container .container-titre h1 {
   font-family: "shrikhand";
   font-size: 1.6em;
   font-weight: lighter;
 }
-.container .container-titre .fa-regular.fa-heart {
+.container .container-titre .fa-regular.fa-heart, .container .container-titre .fa-solid.fa-heart {
   font-size: 1.6em;
-  padding-right: 60px;
 }
 .container .container-bloc {
   display: flex;

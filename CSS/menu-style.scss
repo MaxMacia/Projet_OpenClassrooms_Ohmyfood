@@ -1,6 +1,8 @@
 @import "utils/variables";
 @import "utils/mixins";
 
+@import "components/coeur-animation";
+
 @import "layout/elementsprincipaux";
 @import "layout/header-menu";
 @import "layout/image-menu";
@@ -18,14 +20,14 @@
         justify-content: space-between;
         align-items: center;
         margin-top: 25px;
+        width: 90%;
         h1{
            font-family: 'shrikhand'; 
            font-size: 1.6em;
            font-weight: lighter;
         }
-        .fa-regular.fa-heart{
+        .fa-regular.fa-heart, .fa-solid.fa-heart{
             font-size: 1.6em;
-            padding-right: 60px;
         }
     }
     .container-bloc{
