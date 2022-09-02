@@ -37,9 +37,21 @@
         flex-direction: column;
         margin-top: 20px;
         section{
+            margin-bottom: 20px;
             h2{
                 font-size: 1.3em;
                 font-weight: 100;
+                text-transform: uppercase;
+                margin-bottom: 15px;
+                &::after{
+                    content: "";
+                    background-color: $tertiary-color;
+                    display: block;
+                    height: 3px;
+                    width: 15%;
+                    margin-top: 5px;
+
+                }
             }
             article{
                 display: flex;

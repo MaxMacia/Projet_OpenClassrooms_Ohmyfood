@@ -177,9 +177,22 @@ footer ul a {
   flex-direction: column;
   margin-top: 20px;
 }
+.container .container-bloc section {
+  margin-bottom: 20px;
+}
 .container .container-bloc section h2 {
   font-size: 1.3em;
   font-weight: 100;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.container .container-bloc section h2::after {
+  content: "";
+  background-color: #99E2D0;
+  display: block;
+  height: 3px;
+  width: 15%;
+  margin-top: 5px;
 }
 .container .container-bloc section article {
   display: flex;
