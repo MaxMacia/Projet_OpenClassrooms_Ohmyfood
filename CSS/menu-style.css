@@ -212,6 +212,7 @@ footer ul a {
   display: flex;
   flex-direction: column;
   width: 100%;
+  transition: scale, 1s ease-in-out;
 }
 .container .container-bloc section article .container-bloc-principal h3 {
   font-weight: 550;
@@ -223,6 +224,11 @@ footer ul a {
   width: 100%;
   font-weight: 550;
 }
+.container .container-bloc section article .container-bloc-principal .container-bloc-p p {
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .container .container-bloc section article .bloc-anim {
   display: flex;
   justify-content: center;
@@ -233,7 +239,8 @@ footer ul a {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   position: absolute;
-  left: 277px;
+  top: 0;
+  right: 0;
   transform: scaleX(0);
   transform-origin: right;
   transition: scale, 1s ease-in-out;
@@ -246,8 +253,11 @@ footer ul a {
   transition: 1.3s ease-in-out;
 }
 .container .container-bloc section article:hover .bloc-anim {
-  transform: scale(1);
+  transform: scaleX(1);
   opacity: 1;
+}
+.container .container-bloc section article:hover .container-bloc-principal {
+  width: 80%;
 }
 .container .container-bloc section article:hover .icon-anim {
   transform: rotate(-1turn);
