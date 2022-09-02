@@ -58,6 +58,7 @@
                 .container-bloc-principal{
                     display: flex;
                     flex-direction: column;
+                    width: 100%;
                     h3{
                         font-weight: 550;
                         margin-bottom: 5px;
@@ -81,11 +82,22 @@
                     position: absolute;
                     left: 277px;
                     transform: scaleX(0);
-                    transition: all, 0,5s;                     
+                    transform-origin: right;
+                    transition: scale, 1s ease-in-out;
+                    opacity: 0;
+                    .icon-anim{
+                        color: $white-color;
+                        font-size: 1.2em;
+                        transform: rotate(0turn);
+                        transition: 1.3s ease-in-out;
+                    }                 
                 }
                 &:hover .bloc-anim{
-                    transform: scaleX(1);
-                
+                    transform: scale(1);
+                    opacity: 1;
+                }
+                &:hover .icon-anim{
+                    transform: rotate(-1turn);
                 }
             }
         }
