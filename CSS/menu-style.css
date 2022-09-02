@@ -183,8 +183,8 @@ footer ul a {
 }
 .container .container-bloc section article {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   background-color: #FFF;
   height: 70px;
   margin-right: 10px;
@@ -193,13 +193,36 @@ footer ul a {
   padding-right: 20px;
   border-radius: 15px;
   box-shadow: 5px 5px 5px #d1d1d1;
+  position: relative;
 }
-.container .container-bloc section article h3 {
+.container .container-bloc section article .container-bloc-principal {
+  display: flex;
+  flex-direction: column;
+}
+.container .container-bloc section article .container-bloc-principal h3 {
   font-weight: 550;
   margin-bottom: 5px;
 }
-.container .container-bloc section article .container-bloc-p {
+.container .container-bloc section article .container-bloc-principal .container-bloc-p {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   font-weight: 550;
+}
+.container .container-bloc section article .bloc-anim {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  height: 100%;
+  width: 20%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: absolute;
+  left: 277px;
+  transform: scaleX(0);
+  transition: all, 0, 5s;
+}
+.container .container-bloc section article:hover .bloc-anim {
+  transform: scaleX(1);
 }/*# sourceMappingURL=menu-style.css.map */
