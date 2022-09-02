@@ -1,11 +1,13 @@
 @import "utils/variables";
 @import "utils/mixins";
 
+@import "components/bouton.scss";
 @import "components/coeur-animation";
 
 @import "layout/elementsprincipaux";
 @import "layout/header-menu";
 @import "layout/image-menu";
+@import "layout/footer";
 
 /* Container */
 

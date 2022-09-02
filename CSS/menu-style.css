@@ -1,4 +1,23 @@
-/* Variables */ /* Mixins */ /* animation coeur */
+/* Variables */ /* Mixins */ /* Bouton principal */
+button {
+  height: 40px;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+  box-shadow: 5px 5px 5px #d1d1d1;
+  cursor: pointer;
+  font-size: 0.8em;
+  color: #FFF;
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  transition: all, 0.5s;
+}
+button:hover {
+  opacity: 0.8;
+  box-shadow: 5px 5px 5px #b0b0b0;
+}
+
+/* animation coeur */
 .fa-solid.fa-heart {
   background-image: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
@@ -83,6 +102,51 @@ main > img + .container {
   border-top-right-radius: 30px;
   margin-top: -40px;
   z-index: 2;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid #000;
+  color: #FFF;
+  background-color: #333333;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 30px 0px 30px 0px;
+}
+@media screen and (min-width: 768px) {
+  footer {
+    height: 150px;
+  }
+}
+footer h2 {
+  font-family: "Shrikhand";
+  font-size: 1em;
+  font-weight: 50;
+  padding-left: 20px;
+}
+@media screen and (min-width: 768px) {
+  footer h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+footer ul {
+  padding-left: 20px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media screen and (min-width: 768px) {
+  footer ul {
+    flex-direction: row;
+  }
+}
+footer ul a {
+  color: #FFF;
+  font-size: 0.8em;
 }
 
 /* Container */
