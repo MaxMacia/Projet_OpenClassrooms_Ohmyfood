@@ -11,6 +11,12 @@
     padding: 25px 0px 15px 0px;  
 }
 
+@mixin overflow {
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 @mixin btn {
     height: 40px;
     border-radius: 20px;

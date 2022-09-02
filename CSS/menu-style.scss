@@ -66,16 +66,17 @@
                 border-radius: 15px;
                 @include shadow;
                 position: relative;
+                cursor: pointer;
                 
                 .container-bloc-principal{
                     display: flex;
                     flex-direction: column;
                     width: 100%;
                     transition: scale, 1s ease-in-out;
-                    
                     h3{
                         font-weight: 550;
                         margin-bottom: 5px;
+                        @include overflow;
                     }
                     .container-bloc-p{
                         display: flex;
@@ -83,12 +84,8 @@
                         width: 100%;
                         font-weight: 550; 
                         p{
-                            overflow-x: hidden;
-                            text-overflow: ellipsis;
-                            white-space: nowrap;
-                        }
-                        
-                         
+                            @include overflow;
+                        }         
                     }
                 }
                 .bloc-anim{
