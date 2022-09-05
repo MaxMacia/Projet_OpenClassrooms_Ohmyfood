@@ -55,7 +55,7 @@
 
                 }
             }
-            article{
+            .menu{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -69,8 +69,13 @@
                 @include shadow;
                 position: relative;
                 cursor: pointer;
-                animation: anim-apparition 1000ms ease-in-out;
-                
+                animation: anim-apparition $anim-dur ease-in-out;                
+                @for $i from 1 to 5 {
+                    &--#{$i}{
+                        animation-delay: $anim-delay*$i;
+                        animation-fill-mode: backwards ;
+                    }                    
+                }                
                 .container-bloc-principal{
                     display: flex;
                     flex-direction: column;

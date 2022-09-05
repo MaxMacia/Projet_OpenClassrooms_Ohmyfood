@@ -217,7 +217,7 @@ footer ul a {
   width: 15%;
   margin-top: 5px;
 }
-.container .container-bloc section article {
+.container .container-bloc section .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -231,34 +231,58 @@ footer ul a {
   box-shadow: 5px 5px 5px #d1d1d1;
   position: relative;
   cursor: pointer;
-  -webkit-animation: anim-apparition 1000ms ease-in-out;
-          animation: anim-apparition 1000ms ease-in-out;
+  -webkit-animation: anim-apparition 1200ms ease-in-out;
+          animation: anim-apparition 1200ms ease-in-out;
 }
-.container .container-bloc section article .container-bloc-principal {
+.container .container-bloc section .menu--1 {
+  -webkit-animation-delay: 240ms;
+          animation-delay: 240ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+.container .container-bloc section .menu--2 {
+  -webkit-animation-delay: 480ms;
+          animation-delay: 480ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+.container .container-bloc section .menu--3 {
+  -webkit-animation-delay: 720ms;
+          animation-delay: 720ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+.container .container-bloc section .menu--4 {
+  -webkit-animation-delay: 960ms;
+          animation-delay: 960ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+.container .container-bloc section .menu .container-bloc-principal {
   display: flex;
   flex-direction: column;
   width: 100%;
   transition: scale, 1s ease-in-out;
 }
-.container .container-bloc section article .container-bloc-principal h3 {
+.container .container-bloc section .menu .container-bloc-principal h3 {
   font-weight: 550;
   margin-bottom: 5px;
   overflow-x: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.container .container-bloc section article .container-bloc-principal .container-bloc-p {
+.container .container-bloc section .menu .container-bloc-principal .container-bloc-p {
   display: flex;
   justify-content: space-between;
   width: 100%;
   font-weight: 550;
 }
-.container .container-bloc section article .container-bloc-principal .container-bloc-p p {
+.container .container-bloc section .menu .container-bloc-principal .container-bloc-p p {
   overflow-x: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.container .container-bloc section article .bloc-anim {
+.container .container-bloc section .menu .bloc-anim {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -275,20 +299,20 @@ footer ul a {
   transition: scale, 1s ease-in-out;
   opacity: 0;
 }
-.container .container-bloc section article .bloc-anim .icon-anim {
+.container .container-bloc section .menu .bloc-anim .icon-anim {
   color: #FFF;
   font-size: 1.2em;
   transform: rotate(0turn);
   transition: 1.3s ease-in-out;
 }
-.container .container-bloc section article:hover .bloc-anim {
+.container .container-bloc section .menu:hover .bloc-anim {
   transform: scaleX(1);
   opacity: 1;
 }
-.container .container-bloc section article:hover .container-bloc-principal {
+.container .container-bloc section .menu:hover .container-bloc-principal {
   width: 80%;
 }
-.container .container-bloc section article:hover .icon-anim {
+.container .container-bloc section .menu:hover .icon-anim {
   transform: rotate(-1turn);
 }
 .container .container-bloc button {
