@@ -1,0 +1,128 @@
+/* Container */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    width: 100%;
+    background-color: lighten($grey-color, 1%);
+    .container-titre{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 25px;
+        width: 90%;
+        h1{
+           font-family: 'shrikhand'; 
+           font-size: 1.6em;
+           font-weight: lighter;
+        }
+        .fa-regular.fa-heart, .fa-solid.fa-heart{
+            font-size: 1.6em;
+        }
+    }
+    .container-bloc{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0px 0px -5px;
+        align-items: center;
+        section{
+            margin-bottom: 20px;
+            width: 95%;
+            h2{
+                font-size: 1.3em;
+                font-weight: 100;
+                text-transform: uppercase;
+                margin-bottom: 15px;
+                &::after{
+                    content: "";
+                    background-color: $tertiary-color;
+                    display: block;
+                    height: 3px;
+                    width: 15%;
+                    margin-top: 5px;
+
+                }
+            }
+            .menu{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: $white-color;
+                height: 70px;
+                margin: 0px 10px 15px 0px;
+                padding: 0px 20px 0px 10px;
+                border-radius: 15px;
+                @include shadow;
+                position: relative;
+                cursor: pointer;
+                animation: anim-apparition $anim-dur ease-in-out;                
+                @for $i from 1 to 5 {
+                    &--#{$i}{
+                        animation-delay: $anim-delay*$i;
+                        animation-fill-mode: backwards ;
+                    }                    
+                }                
+                .container-bloc-principal{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    transition: scale, 1s ease-in-out;
+                    h3{
+                        font-weight: 550;
+                        margin-bottom: 5px;
+                        @include overflow;
+                    }
+                    .container-bloc-p{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        font-weight: 550; 
+                        p{
+                            @include overflow;
+                        }         
+                    }
+                }
+                .bloc-anim{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $tertiary-color;
+                    height: 100%;
+                    width: 20%;
+                    border-top-right-radius: 15px;
+                    border-bottom-right-radius: 15px;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    transform: scaleX(0);
+                    transform-origin: right;
+                    transition: scale, 1s ease-in-out;
+                    opacity: 0;
+                    .icon-anim{
+                        color: $white-color;
+                        font-size: 1.2em;
+                        transform: rotate(0turn);
+                        transition: 1.3s ease-in-out;
+                    }                 
+                }
+                &:hover .bloc-anim{
+                    transform: scaleX(1);
+                    opacity: 1;
+                }
+                &:hover .container-bloc-principal{
+                    width: 80%;                    
+                }
+                &:hover .icon-anim{
+                    transform: rotate(-1turn);
+                }
+            }
+        }
+        button{
+            width: 40%;
+            margin-bottom: 50px;
+            margin-left: -15px;
+        }
+    }
+
+}

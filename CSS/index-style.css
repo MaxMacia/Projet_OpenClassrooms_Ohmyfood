@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Variables */ /* Mixins */
+/* Variables */ /* Mixins */ /* Keyframes */
 @-webkit-keyframes anim-apparition {
   0% {
     transform: translateY(20%);
@@ -18,6 +18,66 @@
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+@-webkit-keyframes spinning {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+@keyframes spinning {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+@-webkit-keyframes page-apparition {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes page-apparition {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes loader-disparition {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes loader-disparition {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 /* Bouton principal */
@@ -115,71 +175,9 @@ button:hover {
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
-  padding-left: 36px;
-  padding-top: 28px;
+  padding: 28px 0px 0px 36px;
 }
 
-@-webkit-keyframes spinning {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(1turn);
-  }
-}
-
-@keyframes spinning {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(1turn);
-  }
-}
-@-webkit-keyframes page-apparition {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes page-apparition {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes loader-disparition {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes loader-disparition {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 /* Elements principaux de la page*/
 * {
   margin: 0px;

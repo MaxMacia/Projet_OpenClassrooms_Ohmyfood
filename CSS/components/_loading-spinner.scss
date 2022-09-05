@@ -43,40 +43,5 @@
     background-image: linear-gradient(to bottom right, $secondary-color, $primary-color);
     background-clip: text;
     color: transparent;
-    padding-left: 36px;
-    padding-top: 28px;
-    
-        
-}
-@keyframes spinning {
-    0%{
-        transform: rotate(0);
-    }
-    100%{
-        transform: rotate(1turn);
-    }
-}
-
-@keyframes page-apparition {
-    0%{
-        opacity: 0;
-    }
-    50%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
-@keyframes loader-disparition {
-    0%{
-        opacity: 1;
-    }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-    }
+    padding: 28px 0px 0px 36px;       
 }
