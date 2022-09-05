@@ -67,16 +67,23 @@ button:hover {
 }
 
 /* Animation loading spinner */
+#global-container {
+  -webkit-animation: page-apparition 2.5s ease-out forwards;
+          animation: page-apparition 2.5s ease-out forwards;
+}
+
 .loader-container {
-  height: 100%;
-  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
   background-color: #FFF;
-  -webkit-animation: loading-apparition 2.5s ease-out forwards;
-          animation: loading-apparition 2.5s ease-out forwards;
+  -webkit-animation: loader-disparition 2.5s ease-out forwards;
+          animation: loader-disparition 2.5s ease-out forwards;
 }
 
 .loader {
@@ -129,7 +136,29 @@ button:hover {
     transform: rotate(1turn);
   }
 }
-@-webkit-keyframes loading-apparition {
+@-webkit-keyframes page-apparition {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes page-apparition {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes loader-disparition {
   0% {
     opacity: 1;
   }
@@ -140,7 +169,7 @@ button:hover {
     opacity: 0;
   }
 }
-@keyframes loading-apparition {
+@keyframes loader-disparition {
   0% {
     opacity: 1;
   }
