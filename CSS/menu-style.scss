@@ -14,7 +14,7 @@
 .container{
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
+    padding-left: 15px;
     width: 100%;
     background-color: lighten($grey-color, 1%);
     .container-titre{
@@ -35,9 +35,11 @@
     .container-bloc{
         display: flex;
         flex-direction: column;
-        margin-top: 20px;
+        margin: 20px 0px 0px -5px;
+        align-items: center;
         section{
             margin-bottom: 20px;
+            width: 95%;
             h2{
                 font-size: 1.3em;
                 font-weight: 100;
@@ -60,7 +62,7 @@
                 background-color: $white-color;
                 height: 70px;
                 margin-right: 10px;
-                margin-bottom: 10px;
+                margin-bottom: 15px;
                 padding-left: 10px;
                 padding-right: 20px;
                 border-radius: 15px;
@@ -122,6 +124,12 @@
                     transform: rotate(-1turn);
                 }
             }
+        }
+        button{
+            width: 40%;
+            margin-bottom: 50px;
+            margin-left: -15px;
+
         }
     }
 

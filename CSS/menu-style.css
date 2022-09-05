@@ -153,7 +153,7 @@ footer ul a {
 .container {
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
+  padding-left: 15px;
   width: 100%;
   background-color: whitesmoke;
 }
@@ -175,10 +175,12 @@ footer ul a {
 .container .container-bloc {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  margin: 20px 0px 0px -5px;
+  align-items: center;
 }
 .container .container-bloc section {
   margin-bottom: 20px;
+  width: 95%;
 }
 .container .container-bloc section h2 {
   font-size: 1.3em;
@@ -201,7 +203,7 @@ footer ul a {
   background-color: #FFF;
   height: 70px;
   margin-right: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   padding-left: 10px;
   padding-right: 20px;
   border-radius: 15px;
@@ -265,4 +267,9 @@ footer ul a {
 }
 .container .container-bloc section article:hover .icon-anim {
   transform: rotate(-1turn);
+}
+.container .container-bloc button {
+  width: 40%;
+  margin-bottom: 50px;
+  margin-left: -15px;
 }/*# sourceMappingURL=menu-style.css.map */
