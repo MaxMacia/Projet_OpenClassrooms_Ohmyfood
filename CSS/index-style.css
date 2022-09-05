@@ -1,5 +1,26 @@
 @charset "UTF-8";
-/* Variables */ /* Mixins */ /* Bouton principal */
+/* Variables */ /* Mixins */
+@-webkit-keyframes anim-apparition {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes anim-apparition {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* Bouton principal */
 button {
   height: 40px;
   border-radius: 20px;

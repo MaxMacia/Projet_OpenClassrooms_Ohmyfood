@@ -69,6 +69,7 @@
                 @include shadow;
                 position: relative;
                 cursor: pointer;
+                animation: anim-apparition 1000ms ease-in-out;
                 
                 .container-bloc-principal{
                     display: flex;
@@ -129,7 +130,6 @@
             width: 40%;
             margin-bottom: 50px;
             margin-left: -15px;
-
         }
     }
 
