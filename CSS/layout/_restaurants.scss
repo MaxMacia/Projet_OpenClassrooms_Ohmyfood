@@ -7,8 +7,12 @@
     background-color: lighten($grey-color, 1%);
     height: 1300px;
     @include desktop{
-        height: 900px;
-    }
+        height: 800px;
+    };
+    @include tablette{
+        height: 800px;
+    };
+    
     h2{
         font-size: 1.2em;
         padding-left: 20px;
@@ -21,15 +25,25 @@
         align-items: center;
         height: 1200px;
         @include desktop{
+            height: 635px;
             flex-direction: row;
             flex-wrap: wrap;
-            height: 700px;
-        }
+        };
+        @include tablette{
+            height: 635px;
+            flex-direction: row;
+            flex-wrap: wrap;            
+        };
+        
         a{  
             width: 90%;
             @include desktop{
-                width: 40%;
-            }
+                width: 45%;
+            };
+            @include tablette{
+                width: 45%;
+            };
+            
             article{
                 position: relative;
                 .nouveau{
@@ -43,9 +57,10 @@
                     position: absolute;
                     left: 80%;
                     top: 5%;
-                    @include desktop{                        
-                        left: 74%;
-                    }
+                    @include desktop{
+                        left:73%;
+                    };
+                    
                 }
             }
             

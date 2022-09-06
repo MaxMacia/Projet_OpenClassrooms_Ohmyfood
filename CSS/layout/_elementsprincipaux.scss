@@ -10,13 +10,13 @@
 body, html{
     font-family: 'Roboto';
     height: 100%;
-}
-
-#global-container{
     @include desktop{
         margin: auto;
-        width: 50%;
-    }
+        width: 70%;
+    };
+    @include tablette{
+        width: 100%;
+    };
 }
 
 ul{
@@ -27,3 +27,5 @@ a{
     text-decoration: none;
     color: $black-color;
 }
+
+

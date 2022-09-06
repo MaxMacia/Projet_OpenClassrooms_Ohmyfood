@@ -29,10 +29,17 @@
     color: $white-color;
     background-image: linear-gradient(to bottom right, $secondary-color, $primary-color);
 }
-
 @mixin desktop {
-    @media screen and (min-width: $breakpoints) {
-        @content;
+    @media screen and (min-width: $breakpoint-desktop){
+        @content;    
     }
 }
+
+@mixin tablette {
+    @media screen and (min-width: $breakpoint-tablette) and (max-width: $breakpoint-desktop) {
+        @content;   
+    }
+}
+
+
 

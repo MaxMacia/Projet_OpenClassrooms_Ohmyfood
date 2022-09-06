@@ -188,11 +188,15 @@ body, html {
   font-family: "Roboto";
   height: 100%;
 }
-
-@media screen and (min-width: 768px) {
-  #global-container {
+@media screen and (min-width: 992px) {
+  body, html {
     margin: auto;
-    width: 50%;
+    width: 70%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body, html {
+    width: 100%;
   }
 }
 
@@ -276,10 +280,14 @@ header img {
   width: 95%;
   padding: 0px 10px 0px 30px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   #fonctionnement ul {
-    margin: auto;
-    width: 50%;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #fonctionnement ul {
+    align-items: center;
   }
 }
 #fonctionnement ul li {
@@ -290,6 +298,16 @@ header img {
   height: 50px;
   box-shadow: 5px 5px 5px #d1d1d1;
   transition: background-color, 0.6s;
+}
+@media screen and (min-width: 992px) {
+  #fonctionnement ul li {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #fonctionnement ul li {
+    width: 40%;
+  }
 }
 #fonctionnement ul li span {
   background-color: #9356DC;
@@ -322,9 +340,14 @@ header img {
   background-color: whitesmoke;
   height: 1300px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   #restaurants {
-    height: 900px;
+    height: 800px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #restaurants {
+    height: 800px;
   }
 }
 #restaurants h2 {
@@ -339,19 +362,31 @@ header img {
   align-items: center;
   height: 1200px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   #restaurants .restaurants__container {
+    height: 635px;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 700px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #restaurants .restaurants__container {
+    height: 635px;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 #restaurants .restaurants__container a {
   width: 90%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   #restaurants .restaurants__container a {
-    width: 40%;
+    width: 45%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #restaurants .restaurants__container a {
+    width: 45%;
   }
 }
 #restaurants .restaurants__container a article {
@@ -369,9 +404,9 @@ header img {
   left: 80%;
   top: 5%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   #restaurants .restaurants__container a article .nouveau {
-    left: 74%;
+    left: 73%;
   }
 }
 #restaurants .restaurants__container a .restaurants__cards {
@@ -423,9 +458,14 @@ footer {
   justify-content: space-around;
   padding: 30px 0px 30px 0px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   footer {
-    height: 150px;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  footer {
+    align-items: center;
   }
 }
 footer h2 {
@@ -434,10 +474,14 @@ footer h2 {
   font-weight: 50;
   padding-left: 20px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   footer h2 {
-    text-align: center;
-    margin-bottom: 30px;
+    font-size: 1.3em;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  footer h2 {
+    font-size: 1.3em;
   }
 }
 footer ul {
@@ -447,12 +491,30 @@ footer ul {
   flex-direction: column;
   justify-content: space-around;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   footer ul {
-    flex-direction: row;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  footer ul {
+    align-items: center;
   }
 }
 footer ul a {
   color: #FFF;
   font-size: 0.8em;
+}
+@media screen and (min-width: 992px) {
+  footer ul a {
+    font-size: 1em;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  footer ul a {
+    font-size: 1em;
+  }
+}
+footer ul a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=index-style.css.map */
