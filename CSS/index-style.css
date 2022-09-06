@@ -125,6 +125,14 @@ button:hover {
 .coeur .coeur-bg:hover {
   opacity: 1;
 }
+@media screen and (min-width: 992px) {
+  .coeur .coeur-bg:hover {
+    opacity: 0;
+  }
+  .coeur .coeur-bg:active {
+    opacity: 1;
+  }
+}
 
 /* Animation loading spinner */
 #global-container {
