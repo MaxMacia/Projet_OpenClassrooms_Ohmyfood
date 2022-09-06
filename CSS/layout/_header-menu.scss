@@ -11,6 +11,12 @@ header{
     img{
         height: 30px;
         padding-left: 70px;
+        @include desktop{
+            padding-left: 200px;
+        };
+        @include tablette{
+            padding-left: 280px;
+        };
         
     }
 }

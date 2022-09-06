@@ -178,6 +178,16 @@ header img {
   height: 30px;
   padding-left: 70px;
 }
+@media screen and (min-width: 992px) {
+  header img {
+    padding-left: 200px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  header img {
+    padding-left: 280px;
+  }
+}
 
 /* image de la page */
 main {
