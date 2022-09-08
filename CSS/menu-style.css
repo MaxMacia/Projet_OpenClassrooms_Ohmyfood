@@ -271,26 +271,26 @@ main > img + .container {
           animation: anim-apparition 1200ms ease-in-out;
 }
 .container .container-bloc section .menu--1 {
-  -webkit-animation-delay: 240ms;
-          animation-delay: 240ms;
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
 .container .container-bloc section .menu--2 {
-  -webkit-animation-delay: 480ms;
-          animation-delay: 480ms;
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
 .container .container-bloc section .menu--3 {
-  -webkit-animation-delay: 720ms;
-          animation-delay: 720ms;
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
 .container .container-bloc section .menu--4 {
-  -webkit-animation-delay: 960ms;
-          animation-delay: 960ms;
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
