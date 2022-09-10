@@ -35,28 +35,6 @@
     transform: rotate(1turn);
   }
 }
-@-webkit-keyframes page-apparition {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes page-apparition {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @-webkit-keyframes loader-disparition {
   0%, 50% {
     opacity: 1;
