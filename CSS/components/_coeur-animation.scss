@@ -21,13 +21,5 @@
         &:hover{
             opacity: 1;
         }
-        @include desktop{
-            &:hover{
-                opacity: 0;
-            }
-            &:active{
-                opacity: 1;
-            }
-        };            
     }
 }

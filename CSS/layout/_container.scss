@@ -109,38 +109,15 @@
                 &:hover .bloc-anim{
                     margin-right: 0;
                 }
-                @include desktop{
-                    &:hover .bloc-anim{
-                        transform: scaleX(0);
-                        opacity: 0;
-                    }
-                    &:active .bloc-anim{
-                        transform: scaleX(1);
-                        opacity: 1;
-                    }
-                };
+            
                 &:hover .container-bloc-principal{
                     width: 80%;                    
                 }
-                @include desktop{
-                    &:hover .container-bloc-principal{
-                        width: 100%;                    
-                    }
-                    &:active .container-bloc-principal{
-                        width: 80%;                    
-                    }
-                };
+                
                 &:hover .icon-anim{
                     transform: rotate(-1turn);
                 }
-                @include desktop{
-                    &:hover .icon-anim{
-                        transform: rotate(0turn);
-                    }
-                    &:active .icon-anim{
-                        transform: rotate(-1turn);
-                    }
-                };
+                
             }
         }
         button{

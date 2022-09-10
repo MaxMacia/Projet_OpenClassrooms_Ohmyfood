@@ -100,14 +100,6 @@ button:hover {
 .coeur .coeur-bg:hover {
   opacity: 1;
 }
-@media screen and (min-width: 992px) {
-  .coeur .coeur-bg:hover {
-    opacity: 0;
-  }
-  .coeur .coeur-bg:active {
-    opacity: 1;
-  }
-}
 
 /* Elements principaux de la page*/
 * {
@@ -320,37 +312,11 @@ main > img + .container {
 .container .container-bloc section .menu:hover .bloc-anim {
   margin-right: 0;
 }
-@media screen and (min-width: 992px) {
-  .container .container-bloc section .menu:hover .bloc-anim {
-    transform: scaleX(0);
-    opacity: 0;
-  }
-  .container .container-bloc section .menu:active .bloc-anim {
-    transform: scaleX(1);
-    opacity: 1;
-  }
-}
 .container .container-bloc section .menu:hover .container-bloc-principal {
   width: 80%;
 }
-@media screen and (min-width: 992px) {
-  .container .container-bloc section .menu:hover .container-bloc-principal {
-    width: 100%;
-  }
-  .container .container-bloc section .menu:active .container-bloc-principal {
-    width: 80%;
-  }
-}
 .container .container-bloc section .menu:hover .icon-anim {
   transform: rotate(-1turn);
-}
-@media screen and (min-width: 992px) {
-  .container .container-bloc section .menu:hover .icon-anim {
-    transform: rotate(0turn);
-  }
-  .container .container-bloc section .menu:active .icon-anim {
-    transform: rotate(-1turn);
-  }
 }
 .container .container-bloc button {
   width: 40%;
