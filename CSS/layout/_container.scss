@@ -56,6 +56,7 @@
                 @include shadow;
                 position: relative;
                 cursor: pointer;
+                overflow: hidden;
                 animation: anim-apparition $anim-dur ease-in-out;                
                 @for $i from 1 to 5 {
                     &--#{$i}{
@@ -95,10 +96,9 @@
                     position: absolute;
                     top: 0;
                     right: 0;
-                    transform: scaleX(0);
+                    margin-right: -25%;
                     transform-origin: right;
                     transition: scale, 1s ease-in-out;
-                    opacity: 0;
                     .icon-anim{
                         color: $white-color;
                         font-size: 1.2em;
@@ -107,8 +107,7 @@
                     }                 
                 }
                 &:hover .bloc-anim{
-                    transform: scaleX(1);
-                    opacity: 1;
+                    margin-right: 0;
                 }
                 @include desktop{
                     &:hover .bloc-anim{

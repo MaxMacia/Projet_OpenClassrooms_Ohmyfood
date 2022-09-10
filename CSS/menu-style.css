@@ -58,25 +58,23 @@
   }
 }
 @-webkit-keyframes loader-disparition {
-  0% {
+  0%, 50% {
     opacity: 1;
-  }
-  50% {
-    opacity: 1;
+    z-index: 999999;
   }
   100% {
     opacity: 0;
+    z-index: -1;
   }
 }
 @keyframes loader-disparition {
-  0% {
+  0%, 50% {
     opacity: 1;
-  }
-  50% {
-    opacity: 1;
+    z-index: 999999;
   }
   100% {
     opacity: 0;
+    z-index: -1;
   }
 }
 /* Bouton principal */
@@ -267,6 +265,7 @@ main > img + .container {
   box-shadow: 5px 5px 5px #d1d1d1;
   position: relative;
   cursor: pointer;
+  overflow: hidden;
   -webkit-animation: anim-apparition 1200ms ease-in-out;
           animation: anim-apparition 1200ms ease-in-out;
 }
@@ -330,10 +329,9 @@ main > img + .container {
   position: absolute;
   top: 0;
   right: 0;
-  transform: scaleX(0);
+  margin-right: -25%;
   transform-origin: right;
   transition: scale, 1s ease-in-out;
-  opacity: 0;
 }
 .container .container-bloc section .menu .bloc-anim .icon-anim {
   color: #FFF;
@@ -342,8 +340,7 @@ main > img + .container {
   transition: 1.3s ease-in-out;
 }
 .container .container-bloc section .menu:hover .bloc-anim {
-  transform: scaleX(1);
-  opacity: 1;
+  margin-right: 0;
 }
 @media screen and (min-width: 992px) {
   .container .container-bloc section .menu:hover .bloc-anim {
