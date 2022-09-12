@@ -301,7 +301,7 @@ main > img + .container {
   right: 0;
   margin-right: -25%;
   transform-origin: right;
-  transition: scale, 1s ease-in-out;
+  transition: margin-right 1s ease-in-out;
 }
 .container .container-bloc section .menu .bloc-anim .icon-anim {
   color: #FFF;
