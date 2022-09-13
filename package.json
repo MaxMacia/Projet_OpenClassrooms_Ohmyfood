@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "autoprefixer": "^10.4.9",
+    "postcss": "^8.4.16",
+    "postcss-cli": "^10.0.0",
+    "sass": "^1.54.9"
+  },
+  "name": "projet3_maxence_macia",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/index-style.scss:./css/index-style.css; sass --watch ./sass/menu-style.scss:./css/menu-style.css",
+    "prefix": "postcss ./css/index-style.css --use autoprefixer -d ./CSS/prefixed; postcss ./css/menu-style.css --use autoprefixer -d ./CSS/prefixed"
+   
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxMacia/Openclassrooms_Projet3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/MaxMacia/Openclassrooms_Projet3/issues"
+  },
+  "homepage": "https://github.com/MaxMacia/Openclassrooms_Projet3#readme",
+  "description": ""
+}
